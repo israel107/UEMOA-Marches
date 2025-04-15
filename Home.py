@@ -207,12 +207,12 @@ with col1:
             'yanchor': 'top'
         },
         xaxis = dict(
-            tickfont_size=12,
+            tickfont=dict(size=12),
         ),
         yaxis=dict(
             title='Milliards (FCFA) ',
             titlefont_size=14,
-            tickfont_size=12,
+            tickfont=dict(size=12),
             ))
 
     st.plotly_chart(fig, use_container_width=True)
