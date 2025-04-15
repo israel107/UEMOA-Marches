@@ -207,11 +207,12 @@ with col1:
             'yanchor': 'top'
         },
         xaxis_tickfont_size = 12,
-        yaxis_tickfont_size = 12,
         yaxis=dict(
-            title='Milliards (FCFA) ',
-            ),
-        yaxis_titlefont_size = 14,
+            title=dict(
+            text="Milliards (FCFA)",
+            font=dict(size=12, color="gray")
+        )),
+         
     )
 
     st.plotly_chart(fig, use_container_width=True)
@@ -234,10 +235,10 @@ with col2:
             'yanchor': 'top'
         },
         xaxis_tickfont_size=12,
-        yaxis_tickfont_size=12,
         yaxis=dict(
-            title='Milliards (FCFA) ',
-            titlefont_size=14,
+            title=dict(
+            text="Milliards (FCFA)",
+            font=dict(size=12, color="gray")
             ))
 
     st.plotly_chart(fig, use_container_width=True)
