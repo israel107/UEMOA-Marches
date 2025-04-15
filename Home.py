@@ -434,7 +434,7 @@ with col3:
             text="Points",
             font=dict(size=12, color="gray")
         ),
-        )
+        ))
 
     st.plotly_chart(m_chart, use_container_width=True)
 st.info("**_Conclusion MTP:_** Le MTP est...")
@@ -687,10 +687,11 @@ with st.expander("INDICATEURS ACTIONS"):
             },
             xaxis_tickfont_size=12,
             yaxis=dict(
-                title='Milliards (FCFA) ',
-                titlefont_size=14,
-                tickfont_size=12,
-                ))
+                title=dict(
+                text="Milliards (FCFA)",
+                font=dict(size=12, color="gray")
+            ),
+             ))
 
         st.plotly_chart(fig, use_container_width=True)
 
