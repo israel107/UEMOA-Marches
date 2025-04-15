@@ -206,7 +206,9 @@ with col1:
             'xanchor': "center",
             'yanchor': 'top'
         },
-        xaxis_tickfont_size=12,
+        xaxis = dict(
+            tickfont_size=12,
+        ),
         yaxis=dict(
             title='Milliards (FCFA) ',
             titlefont_size=14,
