@@ -240,6 +240,7 @@ with col2:
             text="Milliards (FCFA)",
             font=dict(size=12, color="gray")
             ))
+    )
 
     st.plotly_chart(fig, use_container_width=True)
 
