@@ -42,11 +42,11 @@ df_vol = pd.read_excel("./idx_volume_sept2024.xlsx", sheet_name=None)
 df_index_2 = df_index
 
 df_liq = pd.read_excel("./BRVM_ratio_liquidite.xlsx", sheet_name=None)
-df_liq.set_index('Seance', inplace=True)
+df_liq = df_liq.set_index('Seance', inplace=True)
 
 df_idx = df_index.set_index('Séance')
 CHART_THEME ='plotly_white'
-df_val.set_index('seance', inplace=True)
+df_val = df_val.set_index('seance', inplace=True)
 
 all_pays = ['Bénin',"Burkina","Côte d'Ivoire", "Guinée Bissaù","Mali","Niger","Sénégal","Togo"]
 
