@@ -41,7 +41,8 @@ df_vol = pd.read_excel("./idx_volume_sept2024.xlsx", sheet_name=None)
 
 df_index_2 = df_index
 
-df_liq = pd.read_excel("./BRVM_ratio_liquidite.xlsx", sheet_name=None)
+df_liq = pd.read_excel("./BRVM_ratio_liquidite.xlsx", sheet_name="Feuille 1")
+print(type(df_liq))
 df_liq = df_liq.set_index('Seance', inplace=True)
 
 df_idx = df_index.set_index('Séance')
