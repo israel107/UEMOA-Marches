@@ -403,10 +403,11 @@ with col2:
         },
         xaxis_tickfont_size=12,
         yaxis=dict(
-            title='en % ',
-            titlefont_size=14,
-            tickfont_size=12,
-            ))
+            title=dict(
+            text="en %",
+            font=dict(size=12, color="gray")
+        )),
+         )
 
     st.plotly_chart(fig, use_container_width=True)
 
@@ -429,10 +430,10 @@ with col3:
         },
         xaxis_tickfont_size=12,
         yaxis=dict(
-            title='Points ',
-            titlefont_size=14,
-            tickfont_size=12,
-            )
+            title=dict(
+            text="Points",
+            font=dict(size=12, color="gray")
+        ),
         )
 
     st.plotly_chart(m_chart, use_container_width=True)
