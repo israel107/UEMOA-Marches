@@ -42,10 +42,9 @@ df_vol = pd.read_excel("./idx_volume_sept2024.xlsx", sheet_name= "Feuil2")
 df_index_2 = df_index
 
 df_liq = pd.read_excel("./BRVM_ratio_liquidite.xlsx", sheet_name="Feuille 1")
-print(type(df_liq))
-df_liq = df_liq.set_index('Seance', inplace=True)
+df_liq.set_index('Seance', inplace=True)
 
-df_idx = df_index.set_index('Séance')
+df_index.set_index('Séance')
 CHART_THEME ='plotly_white'
 df_val = df_val.set_index('seance', inplace=True)
 
