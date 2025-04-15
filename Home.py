@@ -33,10 +33,10 @@ all_year = ["2019", "2020", "2021", "2022", "2023", "2024"]
 all_secteur = ["BRVM Composite", "BRVM 30", "BRVM Prestige","BRVM Principal", "Agriculture","Finances","Serv. Publics", "Industrie","Distribution", "Transport","Autres"]
 all_period = ["Année","Semestre","Trimestre","Mois"]
 
-df_index = pd.read_excel('C:/Users/ckoupoh/Documents/END_FILES/All_Indices_2024.xlsx')
-df_val = pd.read_excel('C:/Users/ckoupoh/Documents/END_FILES/idx_val_sept2024_2.xlsx')
-df_vol = pd.read_excel('C:/Users/ckoupoh/Documents/END_FILES/idx_volume_sept2024.xlsx')
-df_oblig = pd.read_excel('C:/Users/ckoupoh/Documents/END_FILES/Val_Oblig_sept_2024.xlsx')
+df_index = pd.read_excel('All_Indices_2024.xlsx')
+df_val = pd.read_excel('idx_val_sept2024_2.xlsx')
+df_vol = pd.read_excel('idx_volume_sept2024.xlsx')
+#df_oblig = pd.read_excel('C:/Users/ckoupoh/Documents/END_FILES/Val_Oblig_sept_2024.xlsx')
 df_oblig.set_index('seance', inplace=True)
 
 df_index_2 = df_index
