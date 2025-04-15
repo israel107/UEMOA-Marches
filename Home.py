@@ -34,8 +34,8 @@ all_secteur = ["BRVM Composite", "BRVM 30", "BRVM Prestige","BRVM Principal", "A
 all_period = ["Année","Semestre","Trimestre","Mois"]
 
 df_index = pd.read_excel("./All_Indices_2024.xlsx", sheet_name="Cours") 
-df_val = pd.read_excel("./idx_val_sept2024_2.xlsx" , sheet_name=None)
-df_vol = pd.read_excel("./idx_volume_sept2024.xlsx", sheet_name=None)
+df_val = pd.read_excel("./idx_val_sept2024_2.xlsx" , sheet_name= "Feuil1")
+df_vol = pd.read_excel("./idx_volume_sept2024.xlsx", sheet_name= "Feuil2")
 #df_oblig = pd.read_excel("./Val_Oblig_sept_2024.xlsx", sheet_name=None)
 #df_oblig.set_index('seance', inplace=True)
 
