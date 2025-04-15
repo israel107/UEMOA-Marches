@@ -33,15 +33,15 @@ all_year = ["2019", "2020", "2021", "2022", "2023", "2024"]
 all_secteur = ["BRVM Composite", "BRVM 30", "BRVM Prestige","BRVM Principal", "Agriculture","Finances","Serv. Publics", "Industrie","Distribution", "Transport","Autres"]
 all_period = ["Année","Semestre","Trimestre","Mois"]
 
-df_index = pd.read_excel('./All_Indices_2024.xlsx') 
-df_val = pd.read_excel('./idx_val_sept2024_2.xlsx')
-df_vol = pd.read_excel('./idx_volume_sept2024.xlsx')
-#df_oblig = pd.read_excel('./Val_Oblig_sept_2024.xlsx')
+df_index = pd.read_excel("./All_Indices_2024.xlsx", sheet_name=None) 
+df_val = pd.read_excel("./idx_val_sept2024_2.xlsx" , sheet_name=None)
+df_vol = pd.read_excel("./idx_volume_sept2024.xlsx", sheet_name=None)
+#df_oblig = pd.read_excel("./Val_Oblig_sept_2024.xlsx", sheet_name=None)
 df_oblig.set_index('seance', inplace=True)
 
 df_index_2 = df_index
 
-df_liq = pd.read_excel('./BRVM_ratio_liquidite.xlsx')
+df_liq = pd.read_excel("./BRVM_ratio_liquidite.xlsx", sheet_name=None)
 df_liq.set_index('Seance', inplace=True)
 
 df_idx = df_index.set_index('Séance')
