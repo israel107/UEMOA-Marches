@@ -1,0 +1,40 @@
+div.st-emotion-cache-0.e6rk8up5 {
+    margin-top: 0px;
+  }
+  
+  div.stMetric.st-emotion-cache-0.ehvl34q0 {
+      background-color: #FFFFFF;
+      border: 1px solid #CCCCCC;
+      padding: 5% 5% 5% 10%;
+      border-radius: 5px;
+      
+      border-left: 0.5rem solid #9AD8E1 !important;
+      box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+      text-align: left;
+      
+  }
+  
+  div.stColumn.st-emotion-cache-fdvmmq.e6rk8up2 {
+      border-left: 0.5rem solid #3c7443 !important;
+      box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+      text-align: left;
+  }
+  
+  label {
+      color: #36b9cc !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+  }
+  
+  
+  /* Move block container higher */
+  div.block-container.css-18e3th9.egzxvld2 {
+    margin-top: -5em;
+  }
+
+  /* .plot-container>div {
+    box-shadow: 0 0 2px #070505;
+    padding: 5px;
+    border-color: #000000;
+    
+} */
