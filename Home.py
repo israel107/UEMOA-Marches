@@ -13,7 +13,8 @@ import numpy as np
 
 st.set_page_config(page_title="Market Dashboard", page_icon=":bar_chart:", layout="wide")
 
-st.title("Tableau de bord du marché de l'UEMOA")
+st.markdown("<h2 style='text-align: left; font-size: 40px;  font-weight: bold;'>Tableau de bord du marché de l'UEMOA</h2>", unsafe_allow_html=True)
+st.image("C:/Users/ckoupoh/Documents/Dash_Market/pays_uemoa_png.png", caption="", use_container_width=False)
 st.markdown("_DABFA-SFE v0.0.1_")
 
 #graphs will use css
@@ -247,7 +248,7 @@ with col3:
 
     fig = go.Figure(data=[go.Pie(labels=all_pays, values=m_emiss, hole=.3)])
     fig.update_layout(
-        title="Marché primaire (en milliards FCFA)",
+        title="Emission sur le Marché primaire par pays <br> (en milliards FCFA)",
         title_x=0.2,
         height=500,  # Hauteur du graphique
         width=500,    # Largeur du graphique
