@@ -14,7 +14,7 @@ import numpy as np
 st.set_page_config(page_title="Market Dashboard", page_icon=":bar_chart:", layout="wide")
 
 st.markdown("<h2 style='text-align: left; font-size: 40px;  font-weight: bold;'>Tableau de bord du marché de l'UEMOA</h2>", unsafe_allow_html=True)
-st.image("C:/Users/ckoupoh/Documents/Dash_Market/pays_uemoa_png.png", caption="", use_container_width=False)
+st.image("./pays_uemoa_png.png", caption="", use_container_width=False)
 st.markdown("_DABFA-SFE v0.0.1_")
 
 #graphs will use css
