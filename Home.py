@@ -62,18 +62,12 @@ project_1_page = st.Page(
     title="Market Chat",
     icon=":material/smart_toy:",
 )
-pg.run()
+
 #######################################
 # SIDEBAR
 #######################################
 
 with st.sidebar:
-    pg = st.navigation(
-    {
-        "Onglets": [home_page, project_1_page],
-    }
-)
-    
     m_pays = st.selectbox('Pays', all_pays)
 
 with st.sidebar:
@@ -766,4 +760,10 @@ def m_upload():
 
 m_upload()
 
+pg = st.navigation(
+        {
+            "Onglets": [home_page, project_1_page],
+        }
+    )
+pg.run()
  
