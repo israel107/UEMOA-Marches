@@ -44,7 +44,7 @@ pg = st.navigation(
             "Onglets": [home_page, project_1_page],
         }
     )
-pg.run()
+#pg.run()
 #######################################
 # DATA LOADING
 #######################################
