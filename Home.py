@@ -58,7 +58,7 @@ home_page = st.Page(
 )
 
 project_1_page = st.Page(
-    "./Pages/MarketChat.py",
+    "Pages/MarketChat.py",
     title="Market Chat",
     icon=":material/smart_toy:",
 )
