@@ -73,6 +73,7 @@ with st.sidebar:
         "Onglets": [home_page, project_1_page],
     }
 )
+    pg.run()
     m_pays = st.selectbox('Pays', all_pays)
 
 with st.sidebar:
@@ -762,7 +763,7 @@ def m_upload():
      
          
 # --- RUN NAVIGATION ---
-pg.run()
+
 m_upload()
 
  
