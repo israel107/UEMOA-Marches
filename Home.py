@@ -51,11 +51,28 @@ df_val = df_val.set_index('seance', inplace=True)
 
 all_pays = ['Bénin',"Burkina","Côte d'Ivoire", "Guinée Bissaù","Mali","Niger","Sénégal","Togo"]
 
+home_page = st.Page(
+    "Home.py",
+    title="Home",
+    icon=":material/bar_chart:",
+)
+
+project_1_page = st.Page(
+    "Pages/MarketChat.py",
+    title="Market Chat",
+    icon=":material/smart_toy:",
+)
+
 #######################################
 # SIDEBAR
 #######################################
 
 with st.sidebar:
+    pg = st.navigation(
+    {
+        "Onglets": [home_page, project_1_page],
+    }
+)
     m_pays = st.selectbox('Pays', all_pays)
 
 with st.sidebar:
