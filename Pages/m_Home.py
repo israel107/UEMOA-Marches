@@ -72,6 +72,7 @@ with st.sidebar:
 #######################################
 # DATA INDICATEUR
 #######################################
+st.html("<h1 style=' border: 2px solid #fff; padding: 20px; text-align: center; background-color: #adafc0; font-family: Arial, sans-serif; width: 100%; margin: 20px auto; border-radius: 10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);'> <marquee>La dernière émission de billet de trésorerie a été initié par le Groupe VETO, en 2024. Cette opération a permis de lever 2 milliards de FCFA. </marquee> </h1>")
 
 with st.expander("STATISTIQUES"):
     st.markdown('### Infos essentielles')
