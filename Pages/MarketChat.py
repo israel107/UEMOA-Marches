@@ -1,6 +1,5 @@
 import pandas as pd
 import streamlit as st
-import plost
 import numpy as np
 import ollama
 
