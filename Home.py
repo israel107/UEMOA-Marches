@@ -3,6 +3,7 @@ import streamlit as st
 #######################################
 # PAGE SETUP
 #######################################
+st.set_page_config(page_title="Market Dashboard", page_icon=":bar_chart:", layout="wide")
 
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html= True)
