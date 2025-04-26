@@ -23,7 +23,28 @@ theme_plotly = None
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html= True)
 
+#######################################
+# PAGE LOADING
+#######################################
+home_page = st.Page(
+    "Home.py",
+    title="Home",
+    icon=":material/bar_chart:",
+)
 
+project_1_page = st.Page(
+    "Pages/MarketChat.py",
+    title="Market Chat",
+    icon=":material/smart_toy:",
+)
+
+
+pg = st.navigation(
+        {
+            "Onglets": [home_page, project_1_page],
+        }
+    )
+pg.run()
 #######################################
 # DATA LOADING
 #######################################
@@ -50,18 +71,6 @@ CHART_THEME ='plotly_white'
 df_val = df_val.set_index('seance', inplace=True)
 
 all_pays = ['Bénin',"Burkina","Côte d'Ivoire", "Guinée Bissaù","Mali","Niger","Sénégal","Togo"]
-
-home_page = st.Page(
-    "Home.py",
-    title="Home",
-    icon=":material/bar_chart:",
-)
-
-project_1_page = st.Page(
-    "Pages/MarketChat.py",
-    title="Market Chat",
-    icon=":material/smart_toy:",
-)
 
 #######################################
 # SIDEBAR
@@ -759,11 +768,4 @@ def m_upload():
 # --- RUN NAVIGATION ---
 
 m_upload()
-
-pg = st.navigation(
-        {
-            "Onglets": [home_page, project_1_page],
-        }
-    )
-pg.run()
  
