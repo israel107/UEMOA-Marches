@@ -62,7 +62,7 @@ project_1_page = st.Page(
     title="Market Chat",
     icon=":material/smart_toy:",
 )
-
+pg.run()
 #######################################
 # SIDEBAR
 #######################################
@@ -73,7 +73,7 @@ with st.sidebar:
         "Onglets": [home_page, project_1_page],
     }
 )
-    pg.run()
+    
     m_pays = st.selectbox('Pays', all_pays)
 
 with st.sidebar:
