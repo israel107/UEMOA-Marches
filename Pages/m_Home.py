@@ -12,7 +12,7 @@ import numpy as np
 # PAGE SETUP
 #######################################
 
-st.markdown("<h2 style='text-align: left; font-size: 40px;  font-weight: bold;'>Tableau de bord du marché de l'UEMOA</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: left; font-size: 40px;  font-weight: bold;'>Tableau de bord du marché de l'UEMOA </h2>", unsafe_allow_html=True)
 st.image("./pays_uemoa_png.png", caption="", use_container_width=False)
 st.markdown("_DABFA-SFE v0.0.1_")
 
@@ -72,7 +72,7 @@ with st.sidebar:
 #######################################
 # DATA INDICATEUR
 #######################################
-st.html("<h1 style=' border: 2px solid #fff; padding: 20px; text-align: center; background-color: #adafc0; font-family: Arial, sans-serif; width: 100%; margin: 20px auto; border-radius: 10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);'> 💎Diamonds App - Prediction💎 </h1>")
+st.html("<h1 style=' border: 2px solid #fff; padding: 20px; text-align: center; background-color: #adafc0; font-family: Arial, sans-serif; width: 100%; margin: 20px auto; border-radius: 10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);'> <marquee>La dernière émission de billet de trésorerie a été initié par le Groupe VETO, en 2024. Cette opération a permis de lever 2 milliards de FCFA. </marquee> </h1>")
 with st.expander("STATISTIQUES"):
     st.markdown('### Infos essentielles')
     m_cap_obl = [7100, 12000, 9500, 10500, 14100, 11600]
