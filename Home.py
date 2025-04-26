@@ -761,7 +761,8 @@ def m_upload():
         st.success('Fichier chargé.')
      
          
- 
+# --- RUN NAVIGATION ---
+pg.run()
 m_upload()
 
  
