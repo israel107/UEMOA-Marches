@@ -27,7 +27,7 @@ with open("style.css") as f:
 # PAGE LOADING
 #######################################
 home_page = st.Page(
-    "Pages/Home.py",
+    "Pages/m_Home.py",
     title="Home",
     icon=":material/bar_chart:",
 )
