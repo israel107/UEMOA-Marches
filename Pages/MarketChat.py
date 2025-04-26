@@ -19,8 +19,8 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-st.subheader("Que voudriez-vous savoir sur le marché de l'UEMOA ?")
-if prompt := st.chat_input("Comment pourrais-je vous aider ?"):
+st.subheader("Chat Non fonctionnel?")
+if prompt := st.chat_input("Que voudriez-vous savoir sur le marché de l'UEMOA ? ?"):
     #user
     st.session_state.messages.append({"role":"user", "content": prompt})
 
