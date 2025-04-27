@@ -29,7 +29,7 @@ if prompt := st.chat_input("Que voudriez-vous savoir sur le marché de l'UEMOA ?
     
     #model
     with st.chat_message("assistant"):
-        response = ollama.chat(model='gemma2', messages=[
+        response = ollama.chat(model='llama3', messages=[
             {'role': m['role'], "content": m["content"]}
             for m in st.session_state.messages
         ], stream=True)
