@@ -41,8 +41,8 @@ if prompt := st.chat_input("Que voudriez-vous savoir sur le marché de l'UEMOA ?
                 response_content +=chunk['message']['content']
                 yield chunk['message']['content']
 
-        stream = catch_response(response)
-        st.write_stream(stream)
+        m_stream = catch_response(response)
+        st.write_stream(m_stream)
 
         st.session_state.messages.append({"role": "assistant", "content": response_content})
 
